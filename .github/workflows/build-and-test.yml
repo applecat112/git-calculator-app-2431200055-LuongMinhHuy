@@ -15,6 +15,7 @@ node-version: '20'
 - run: npm install
 - run: npm run lint
 - run: npm test
+
 build:
 needs: test # This job will only run if the 'test' job succeeds
 strategy:
